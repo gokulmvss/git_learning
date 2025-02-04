@@ -1,0 +1,97 @@
+Git example:
+git init //to initialize local git repository
+echo "newfile contents" > file.txt // to create new file
+git status // you can see this file is not tracked
+git add . // add files to storage area and so now it is tracked
+git commit -m "first commit message"
+
+// connect existing repo to this repo
+git remote add origin https://github.com/gokulmvss/Data-Driven-Packet-Loss-Prediction.git
+git branch -M main
+git push -u origin main
+
+//create new repository
+echo "# Data-Driven-Packet-Loss-Prediction" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/gokulmvss/Data-Driven-Packet-Loss-Prediction.git
+git push -u origin main
+
+// to connect github to local git
+git config --global user.name "Your Name"
+git config --global user.email ""
+
+
+
+
+// example scenario: i am connected to 1 repo but i made new repo and want to connect and push new files to it
+
+
+C:\Users\Administrator\Desktop\KPMG\MyWorkForGithub>echo "this file is to learn githib" > file2.txt
+
+C:\Users\Administrator\Desktop\KPMG\MyWorkForGithub>cd file2.ttx
+The system cannot find the path specified.
+
+C:\Users\Administrator\Desktop\KPMG\MyWorkForGithub>cd file2.txt
+The directory name is invalid.
+
+C:\Users\Administrator\Desktop\KPMG\MyWorkForGithub>file2.txt
+
+C:\Users\Administrator\Desktop\KPMG\MyWorkForGithub>git init
+Reinitialized existing Git repository in C:/Users/Administrator/Desktop/KPMG/MyWorkForGithub/.git/
+
+C:\Users\Administrator\Desktop\KPMG\MyWorkForGithub>git add file2.txt
+
+C:\Users\Administrator\Desktop\KPMG\MyWorkForGithub>git commit -m "Commit to new repository"
+[main 5d26ada] Commit to new repository
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file2.txt
+
+C:\Users\Administrator\Desktop\KPMG\MyWorkForGithub>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\Administrator\Desktop\KPMG\MyWorkForGithub>git branch -m main
+
+C:\Users\Administrator\Desktop\KPMG\MyWorkForGithub>git remote add origin https://github.com/gokulmvss/git_learning.git
+error: remote origin already exists.
+
+C:\Users\Administrator\Desktop\KPMG\MyWorkForGithub>git remote remove origin
+
+C:\Users\Administrator\Desktop\KPMG\MyWorkForGithub>git remote add origin https://github.com/gokulmvss/git_learning.git
+
+C:\Users\Administrator\Desktop\KPMG\MyWorkForGithub>git push -u origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (9/9), 749 bytes | 249.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/gokulmvss/git_learning.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\Administrator\Desktop\KPMG\MyWorkForGithub>git statu
+git: 'statu' is not a git command. See 'git --help'.
+
+The most similar commands are
+        status
+        stage
+        stash
+
+C:\Users\Administrator\Desktop\KPMG\MyWorkForGithub>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+
+
+
+
+
